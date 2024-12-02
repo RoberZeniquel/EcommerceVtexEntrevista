@@ -1,0 +1,4 @@
+:global(.vtex-store__template) {
+    --main-color: white;
+    --acent-color: #259c2d;
+  }

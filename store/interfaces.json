@@ -1,0 +1,81 @@
+{
+"menu-custom": {
+    "component": "MenuCustom",
+    "fields": {
+      "items": {
+        "title": "Ítems del Menú",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Texto del Nivel 1"
+            },
+            "link": {
+              "type": "string",
+              "title": "Enlace del Nivel 1",
+              "description": "URL al que se redirige este elemento"
+            },
+            "subItems": {
+              "type": "array",
+              "title": "Subítems del Nivel 2",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "title": "Texto del Nivel 2"
+                  },
+                  "link": {
+                    "type": "string",
+                    "title": "Enlace del Nivel 2",
+                    "description": "URL al que se redirige este subítem"
+                  },
+                  "subItems": {
+                    "type": "array",
+                    "title": "Subítems del Nivel 3",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "title": "Texto del Nivel 3"
+                        },
+                        "link": {
+                          "type": "string",
+                          "title": "Enlace del Nivel 3",
+                          "description": "URL al que se redirige este subítem"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+"menu-custom-mobile": {
+    "component": "MenuCustomMobile"
+  },
+
+"calculador-cuotas": {
+    "component": "CalculadorCuotas",
+    "fields": {
+      "cantidadCuotas": {
+        "title": "Cantidad de cuotas",
+        "type": "number",
+        "default": 12
+      }
+    }
+  },
+
+"calculador-envio": {
+    "component": "CalculadorEnvio"
+  }
+
+}

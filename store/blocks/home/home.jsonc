@@ -1,0 +1,42 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "flex-layout.row#shelf-home"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "Prueba entrevista",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  "flex-layout.row#shelf-home": {
+    "props": {
+      "blockClass": "shelf-home"
+    },
+    "children": ["list-context.product-list#shelfrober"]
+  },
+  "list-context.product-list#shelfrober": {
+    "blocks": ["product-summary.shelf#test"],
+    "children": ["slider-layout#shelfsrober"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelfsrober": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}

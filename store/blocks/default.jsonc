@@ -1,0 +1,52 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "product-summary.shelf#test": {
+    "children": [
+      "product-summary-add-to-list-button",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-image#shelfTest",
+      "product-summary-price",
+      "calculador-cuotas",
+      //"product-identifier.summary",
+      "add-to-cart-button"
+    ]
+  },
+
+  "product-summary-image#shelfTest": {
+      "props": {
+        "showBadge": false,
+        "aspectRatio": "1:1",
+        "maxHeight": 300
+      }
+    },
+
+  "calculador-cuotas": {
+    "props": {
+      "cantidadCuotas": 3
+    }
+  }
+
+}

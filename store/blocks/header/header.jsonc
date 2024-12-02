@@ -1,0 +1,171 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktop",
+      "flex-layout.row#desktop-menu"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "equal"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar-desktop",
+      "flex-layout.col#user-icon-desktop",
+      "flex-layout.col#login-desktop",
+      "flex-layout.col#minicart-desktop"
+    ]
+  },
+  "flex-layout.row#desktop-menu": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "menu-custom"
+    ]
+  },
+  "flex-layout.col#search-bar-desktop": {
+    "props": {
+      "width": "65%"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#user-icon-desktop": {
+    "props": {
+      "width": "5%",
+      "verticalAlign": "middle"
+    },
+    "children": ["image#user-icon"]
+  },
+  "image#user-icon": {
+    "props": {
+      "src": "https://driccoar.vtexassets.com/assets/vtex.file-manager-graphql/images/24db0350-e2a0-40ad-a67f-c6c663bac6ad___d49aa7730087bbffe29beb1d7decedb1.svg",
+      "blockClass": [
+        "headerIcon",
+        "headerIconUser"
+      ],
+      "link": {
+        "openNewTab": false,
+        "title": "Login user",
+        "url": "/account"
+      }
+      }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width":"15%"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png",
+      "width": "80"
+    }
+  },
+  "flex-layout.col#login-desktop": {
+    "props": {"verticalAlign": "middle"},
+    "children": ["login"]
+  },
+  "flex-layout.col#minicart-desktop": {
+    "props": {"verticalAlign": "middle"},
+    "children": ["minicart.v2"]
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.col#drawer-mobile",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#user-icon-mobile",
+      "flex-layout.col#login-mobile",
+      "flex-layout.col#minicart-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "flex-layout.col#drawer-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "width":"15%",
+      "blockClass":"drawer-mobile"
+    },
+    "children": ["menu-custom-mobile"]
+  },
+  "drawer": {
+    "props":{
+      "orientation": "vertical",
+      "isFullWidth": "true"
+    },
+    "children": [
+      "menu-custom"
+      ]
+  },
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"logo-mobile",
+      "width":"30%"
+    },
+    "children": ["logo"]
+  },
+  "flex-layout.col#login-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"login-mobile",
+      "width":"20%"
+    },
+    "children": ["login"]
+  },
+  "flex-layout.col#user-icon-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"user-icon-mobile",
+      "width":"10%"
+    },
+    "children": ["image#user-icon"]
+  },
+  "flex-layout.col#minicart-mobile": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"minicart-mobile",
+      "width":"10%"
+    },
+    "children": ["minicart.v2"]
+  }
+  
+}

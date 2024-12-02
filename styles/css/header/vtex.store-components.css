@@ -1,0 +1,52 @@
+.imageElementLink--headerIconUser{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.searchBarContainer{
+    width: 100%;
+    max-width: none;
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group){
+    border: solid 1.5px var(--acent-color);
+    border-radius: 25px;
+}
+
+.searchIcon{
+    color: var(--acent-color);
+}
+
+.logoLink{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logoContainer{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+.logoImage{
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    
+    .logoContainer{
+        padding: 0;
+    }
+
+    .logoImage{
+        width: 130px;
+        max-width: none;
+    }
+
+    .imageElement--headerIconUser{
+        width: 22px;
+    }
+
+}
